@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popcornपूर</title>
+
+<style>
+ /* Global Styles */
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #ff6600;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #ffcc00;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ffd633;
+            color: #333;
+        }
+
+        .navbar a.active {
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Content Styles */
+        .content {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h2 {
+            color: #ff6600;
+            font-size: 24px;
+            margin-bottom: 20px; /* Added margin-bottom */
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+  /* Styles for Popcorn Animation */
+  #popcorn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Adjusted margin-bottom */
+  }
+
+  .popcorn-emoji {
+    font-size: 80px;
+    opacity: 0;
+  }
+
+  @keyframes popcornAnim {
+    0% {
+      transform: translateY(0) scale(0);
+      opacity: 0;
+    }
+    20% {
+      transform: translateY(-20px) scale(1.4);
+      opacity: 1;
+    }
+    40% {
+      transform: translateY(-40px) scale(1.8);
+    }
+    60% {
+      transform: translateY(-60px) scale(2.2);
+    }
+    80% {
+      transform: translateY(-80px) scale(2.6);
+    }
+    100% {
+      transform: translateY(-100px) scale(3);
+      opacity: 0;
+    }
+  }
+
+  /* Media Query for Mobile Devices */
+  @media only screen and (max-width: 600px) {
+    .popcorn-emoji {
+      font-size: 40px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="header">
+    <h1>Welcome to Popcornपूर</h1>
+    <p>Your destination for delicious Popcorn!</p>
+</div>
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a class="active" href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+</div>
+<div class="container">
+    <div class="content">
+        <h2>About Us</h2>
+        <p>We are passionate about bringing you the best popcorn  experience. Whether you're craving a classic popcorn snack , we've got you covered!</p>
+        <!-- Popcorn Emoji Animation Container -->
+        <div id="popcorn-container">
+            <div class="popcorn-emoji">&#x1F37F;</div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>&copy; 2024 Popcornपूर. All rights reserved.</p>
+</div>
+
+<script>
+// Function to animate the popcorn emoji
+function animatePopcorn() {
+    const emoji = document.querySelector('.popcorn-emoji');
+    emoji.style.animation = 'popcornAnim 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards';
+    setTimeout(() => {
+        emoji.style.animation = 'none';
+        setTimeout(() => {
+            emoji.style.animation = 'popcornAnim 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards';
+        }, 100); // A small delay to reset animation
+    }, 1000); // Interval of 2 seconds
+}
+
+// Trigger the animation periodically
+setInterval(animatePopcorn, 2000); // Repeat every 2 seconds
+</script>
+</body>
+</html>
