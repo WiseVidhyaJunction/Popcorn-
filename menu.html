@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Popcornपूर</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: #ff6600;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            background-color: #ffcc00;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #ffd633;
+            color: #333;
+        }
+
+        .navbar a.active {
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Content Styles */
+        .content {
+            padding: 20px 0;
+        }
+
+        h2 {
+            color: #ff6600;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        /* Menu Item Styles */
+        .menu-item {
+            margin-bottom: 20px; /* Margin between menu items */
+            overflow: hidden;
+        }
+
+        .menu-item img {
+            float: left;
+            margin-right: 20px;
+            width: 200px; /* Set the width */
+            height: 150px; /* Set the height */
+            object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+        }
+
+        .menu-item-content {
+            overflow: hidden;
+        }
+
+        .menu-item-content h3 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .menu-item-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .order-button {
+            display: inline-block;
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .order-button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to Popcornपूर</h1>
+        <p>Your destination for delicious Popcorn!</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="#">Menu</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <br>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="content">
+            <h2>Our Menu</h2>
+
+            <!-- Menu Items -->
+            <div class="menu-item">
+                <img src="menu/popcorn1.jpg" alt="Popcorn 1">
+                <div class="menu-item-content">
+                    <h3>Classic Butter Popcorn</h3>
+                    <p>Delicious popcorn popped to perfection with buttery goodness.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu/popcorn5.png" alt="Popcorn 2">
+                <div class="menu-item-content">
+                    <h3>Caramel Crunch Popcorn</h3>
+                    <p>Crunchy popcorn coated with sweet caramel, a delightful treat.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+            <!-- Add more menu items here -->
+            <div class="menu-item">
+                <img src="menu/popcorn6.png" alt="Popcorn 3">
+                <div class="menu-item-content">
+                    <h3>Cheddar Cheese Popcorn</h3>
+                    <p>Sharp cheddar cheese flavor on fluffy popcorn.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu/popcorn1.jpg" alt="Popcorn 4">
+                <div class="menu-item-content">
+                    <h3>Spicy Jalapeno Popcorn</h3>
+                    <p>Spicy and flavorful popcorn with a hint of jalapeno heat.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu/popcorn1.jpg" alt="Popcorn 5">
+                <div class="menu-item-content">
+                    <h3>Chocolate Drizzle Popcorn</h3>
+                    <p>Irresistible popcorn drizzled with rich chocolate.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu/popcorn1.jpg" alt="Popcorn 6">
+                <div class="menu-item-content">
+                    <h3>Sea Salt Caramel Popcorn</h3>
+                    <p>Sea salt combined with sweet caramel, a perfect balance.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu/popcorn1.jpg" alt="Popcorn 7">
+                <div class="menu-item-content">
+                    <h3>Sweet & Salty Kettle Corn</h3>
+                    <p>Crunchy kettle corn with the perfect mix of sweet and salty.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu/popcorn2.png" alt="Popcorn 8">
+                <div class="menu-item-content">
+                    <h3>Garlic Parmesan Popcorn</h3>
+                    <p>Savory garlic and parmesan flavor on light and fluffy popcorn.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu/popcorn3.jpg" alt="Popcorn 9">
+                <div class="menu-item-content">
+                    <h3>Truffle Oil Popcorn</h3>
+                    <p>Indulgent truffle oil infused into every delicious kernel.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="menu/popcorn4.jpg" alt="Popcorn 10">
+                <div class="menu-item-content">
+                    <h3>Sriracha Lime Popcorn</h3>
+                    <p>Fiery sriracha combined with zesty lime for a flavor explosion.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br> <br><br><br>
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Popcornपूर. All rights reserved.</p>
+    </div>
+</body>
+</html>
